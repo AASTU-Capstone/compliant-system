@@ -34,11 +34,11 @@ export function FilePicker(props: Partial<DropzoneProps>) {
     const imageUrl = URL.createObjectURL(file);
     return (
       <Box
+      key={index}
         className="border-2 border-gray-300 cursor-pointer"
         onClick={() => removeFile(file)}
       >
         <Image
-          key={index}
           src={imageUrl}
           onLoad={() => URL.revokeObjectURL(imageUrl)}
         />
