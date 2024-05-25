@@ -1,7 +1,6 @@
 "use client";
 import DataTable from "@/shared/table";
 import { Box, Flex, Paper, SimpleGrid, Text } from "@mantine/core";
-import { IconCheck, IconTrash } from "@tabler/icons-react";
 import { useMemo } from "react";
 import { Column } from "react-table";
 import { Data } from "./page";
